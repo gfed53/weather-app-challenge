@@ -1,5 +1,11 @@
 # Weather App Challenge
 
+To Get the App Running:
+
+* Globally install the Angular CLI in the  command line with `npm i -g @angular/cli`.
+* In the root directory, enter `npm i` in the command line to install dependencies.
+* You should now be able to run the app by entering `npm start`.
+
 Requirements:
 
 * Implement data tracker class that keeps track of min, max, mean, and mode values.
