@@ -1,4 +1,11 @@
 <div>
-  Hello world
+  <form  (ngSubmit)="getData(city)">
+    <mat-form-field>
+      <input matInput type="text" name="city" [(ngModel)]="city" placeholder="Enter a city.."> 
+    </mat-form-field>
+    <button type="submit" mat-button>Get Data</button>
+  </form>
+
+  <div></div>
 </div>
 
