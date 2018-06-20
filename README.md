@@ -1,27 +1,19 @@
-# WeatherAppChallenge
+# Weather App Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Requirements:
 
-## Development server
+* Implement data tracker class that keeps track of min, max, mean, and mode values.
+* insert(value) - Records a new value into the tracker
+* showMin() - Show the minimum value from the recorded tracker values
+* showMax() - Show the maximum value from the recorded tracker values
+* showMean() - Show the mean value from the recorded tracker values
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+I visualized this challenge from a front end point-of-view, so I initally wanted to use Angular and incorporate a user form.
 
-## Code scaffolding
+The user would enter a city that they'd like to get weather data from. Since we needed to get a list of data to do things with, I figured that getting the 5 day forecast for a given city would be ideal. I decided to simply go with the temperature data we get back.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For the insert method, I interpretted that as allowing the user to insert a new location into our "tracker" so we can get back different weather data based on location. I understand that there can be a number of ways to interpret this after looking a bit more into the API, such as maybe getting historical data, and the 'insert' function would determine the span of time you'd want to get data from.
 
-## Build
+Since the challenge stated that not too much time should be spent on this or the design portion, I cut it off right where I'm just logging out our data. I planned on adding a card element displaying the data, so if you end up seeing that, note that it's more of an afterthought.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ 
